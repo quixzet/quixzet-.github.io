@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quixzet | Персональный сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Анимированный фон -->
+    <div class="animated-bg"></div>
+    
+    <!-- Курсор с эффектом (только для ПК) -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-circle" id="cursor-circle"></div>
+
+    <!-- Прелоадер -->
+    <div class="loader" id="loader">
+        <div class="loader-text">quixzet loading...</div>
+        <div class="loader-progress"></div>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <div class="logo">
+                    <span class="logo-text">quixzet</span>
+                    <div class="logo-dot"></div>
+                </div>
+                <button class="close-menu" id="close-menu">✕</button>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-nav-link">Главная</a></li>
+                <li><a href="#story" class="mobile-nav-link">История</a></li>
+                <li><a href="#timeline" class="mobile-nav-link">Временная линия</a></li>
+                <li><a href="#gallery" class="mobile-nav-link">Галерея</a></li>
+                <li><a href="#contact" class="mobile-nav-link">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <nav class="glass-nav">
+        <div class="logo" id="logo">
+            <span class="logo-text">quixzet</span>
+            <div class="logo-dot"></div>
+        </div>
+        
+        <div class="desktop-nav">
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Главная</a></li>
+                <li><a href="#story" class="nav-link">История</a></li>
+                <li><a href="#timeline" class="nav-link">Временная линия</a></li>
+                <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <button id="theme-btn">🌙</button>
+            </div>
+        </div>
+
+        <button class="burger-menu" id="burger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <main>
+        <!-- Герой секция с параллаксом -->
+        <section id="home" class="hero-parallax">
+            <div class="parallax-bg" data-depth="0.1"></div>
+            <div class="hero-content" data-aos="fade-up">
+                <div class="logo-hero">
+                    <span class="logo-text-hero">quixzet</span>
+                    <div class="logo-dot-hero"></div>
+                </div>
+                <h1 class="hero-title">
+                    <span class="red-gradient">Добро пожаловать в мой мир</span>
+                </h1>
+                <p class="hero-subtitle">Исследуй мои воспоминания, мысли и творчество</p>
+                <button class="cta-button" id="explore-btn">
+                    <span>Начать путешествие</span>
+                    <div class="button-hover-effect"></div>
+                </button>
+            </div>
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <!-- Остальные секции остаются без изменений -->
+        <section id="story" class="story-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-right">Моя История</h2>
+                <div class="story-grid">
+                    <div class="story-card" data-aos="flip-left">
+                        <div class="card-icon">🎯</div>
+                        <h3>Цель</h3>
+                        <p>Окончить учёбу, Заработать. Жениться</p>
+                    </div>
+                    <div class="story-card" data-aos="flip-left" data-aos-delay="100">
+                        <div class="card-icon">🚀</div>
+                        <h3>Достижения</h3>
+                        <p>ну уже 3 курс ща закончить учёбу и уже будет достижение</p>
+                    </div>
+                    <div class="story-card" data-aos="flip-left" data-aos-delay="200">
+                        <div class="card-icon">❤️</div>
+                        <h3>Увлечения</h3>
+                        <p>сайты html нравится создавать, щас я это и делаю впринципе</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-left">Временная Линия</h2>
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <h3>Настоящее время</h3>
+                            <p>Создание этого сайта</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-left">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <h3>Период роста</h3>
+                            <p>Годы обучения, открытий чего то нового</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-right">
+                        <div class="timeline-date">2025</div>
+                        <div class="timeline-content">
+                            <h3>Формирование</h3>
+                            <p>не знаю лол</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="zoom-in">Моменты Жизни</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="0">
+                        <img src="images/photo1.jpg" alt="Мое фото 1" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h4>DDX</h4>
+                            <p>Походили и устали</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                        <img src="images/photo2.jpg" alt="Мое фото 2" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h4>Фоточка в таксе</h4>
+                            <p>Ян фоткаца любит</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                        <img src="images/photo3.jpg" alt="Мое фото 3" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h4>Фоточка в таксе</h4>
+                            <p>Ян обожает фотоца</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Свяжись Со Мной</h2>
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span>quixzet@outlook.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <span>+7 922 431 36 32</span>
+                        </div>
+                        <div class="social-links">
+                            <button class="social-btn">Telegram</button>
+                        </div>
+                    </div>
+                    <form class="contact-form" data-aos="fade-left">
+                        <input type="text" placeholder="Ваше имя" required>
+                        <input type="email" placeholder="Ваш email" required>
+                        <textarea placeholder="Ваше сообщение..." rows="5" required></textarea>
+                        <button type="submit" class="submit-btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="logo-footer">
+            <span class="logo-text">quixzet</span>
+            <div class="logo-dot"></div>
+        </div>
+        <p>&copy; 2024 quixzet.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
